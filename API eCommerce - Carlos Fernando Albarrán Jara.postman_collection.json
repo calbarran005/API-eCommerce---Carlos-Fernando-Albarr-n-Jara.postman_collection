@@ -1,0 +1,131 @@
+{
+  "info": {
+    "_postman_id": "010efa6b-a61a-4a6a-9268-27c4a6d35b06",
+    "name": "API eCommerce - Carlos Fernando Albarrán Jara",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "51373047",
+    "_collection_link": "https://go.postman.co/collection/51373047-010efa6b-a61a-4a6a-9268-27c4a6d35b06?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET-PRODUCTOS",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get-ProductoID",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post-Crear Usuario",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get-Usuario",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUTCH-USER",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"calbarran005@gmail.com\",\r\n  \"name\": \"Carlos Fernandoooo\",\r\n  \"password\": \"Pucca15978\",\r\n  \"role\": \"admin\",\r\n  \"avatar\": \"https://placehold.co/200\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/users/:UserId",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "users",
+            ":UserId"
+          ],
+          "variable": [
+            {
+              "key": "UserId",
+              "value": "1188"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete-User",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "LOGIN",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "api_key",
+            "value": "string"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"calbarran005@gmail.com\",\r\n  \"password\": \"Pucca15978\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/auth/login",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
